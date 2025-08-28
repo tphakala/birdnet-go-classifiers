@@ -6523,8 +6523,10 @@ Zosterops virens_Cape White-eye
 Certhia familiaris_Eurasian Treecreeper
 Dendrocopos major_Great Spotted Woodpecker
 Dog_Dog
+Engine_Engine
 Garrulus glandarius_Eurasian Jay
 Glaucidium passerinum_Eurasian Pygmy Owl
+Human vocal_Human vocal
 Loxia curvirostra_Common Crossbill
 Ovis aries_Sheep
 Picus Canus_Grey-headed Woodpecker
