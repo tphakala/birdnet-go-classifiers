@@ -6525,8 +6525,6 @@ Dendrocopos major_Great Spotted Woodpecker
 Dog_Dog
 Garrulus glandarius_Eurasian Jay
 Glaucidium passerinum_Eurasian Pygmy Owl
-Human non-vocal_Human non-vocal
-Human vocal_Human vocal
 Loxia curvirostra_Common Crossbill
 Ovis aries_Sheep
 Picus Canus_Grey-headed Woodpecker
