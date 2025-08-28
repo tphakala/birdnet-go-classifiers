@@ -49,33 +49,6 @@ Species added to extend the base model's capabilities:
      - Restart BirdNET-Go
 5. Refer to the [BirdNET-Go documentation](https://github.com/tphakala/birdnet-go) for detailed setup instructions
 
-### With BirdNET Analyzer
-1. Download the classifier model
-2. Load the custom model in BirdNET Analyzer
-3. Configure the species list to include the supported species
-
-## Model Performance
-
-These custom classifiers have been trained and optimized for:
-- Enhanced accuracy for the listed augmented species
-- Reliable detection of new species not in the base model
-- Compatibility with existing BirdNET workflows
-- Efficient inference on edge devices
-
-## Technical Specifications
-
-- **Model Format**: TensorFlow Lite (.tflite)
-- **Base Architecture**: BirdNET v2.4
-
-## Contributing
-
-We welcome contributions to improve model accuracy and add support for additional species. Please:
-
-1. Open an issue to discuss proposed changes
-2. Provide sample audio data for new species
-3. Include validation results for model improvements
-4. Follow the contribution guidelines
-
 ## Changelog
 
 ### v28082025
