@@ -1,0 +1,2 @@
+Hidden units,Dropout,Batchsize,Learning rate,Crop mode,Crop overlap,Audio speed,Upsamling mode,Upsamling ratio,use mixup,use label smoothing,BirdNET Model version
+2048,0.0,32,0.0001,segments,1.0,1.0,repeat,0.4,True,False,V2.4
