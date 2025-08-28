@@ -41,9 +41,13 @@ Species added to extend the base model's capabilities:
 
 ### With BirdNET-Go
 1. Download the latest classifier model from the releases section
-2. Place the `.tflite` file in your BirdNET-Go models directory
-3. Configure BirdNET-Go to use the custom classifier
-4. Refer to the [BirdNET-Go documentation](https://github.com/tphakala/birdnet-go) for detailed setup instructions
+2. Place the `.tflite` file in your BirdNET-Go models directory (birdnet-go-app/data/models/)
+3. Place the `*_Labels.txt` next to `.tflite` file in models directory
+4. Configure BirdNET-Go to use the custom classifier in config.yaml
+     - Set modelpath to "models/BirdNET-Go_classifier_20250825.tflite"
+     - Set labelpath to "models/BirdNET-Go_classifier_20250825_Labels.txt"
+     - Restart BirdNET-Go
+5. Refer to the [BirdNET-Go documentation](https://github.com/tphakala/birdnet-go) for detailed setup instructions
 
 ### With BirdNET Analyzer
 1. Download the classifier model
