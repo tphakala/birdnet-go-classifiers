@@ -21,9 +21,11 @@ These species have enhanced detection capabilities compared to the base BirdNET 
 
 - **Certhia familiaris** - Eurasian Treecreeper
 - **Corvus corax** - Common Raven
+- **Corvus cornix** - Hooded Crow
 - **Cyanistes caeruleus** - Eurasian Blue Tit
 - **Dendrocopos major** - Great Spotted Woodpecker
 - **Dog** - Dog
+- **Dryocopus martius** - Black Woodpecker
 - **Engine** - Engine
 - **Garrulus glandarius** - Eurasian Jay
 - **Glaucidium passerinum** - Eurasian Pygmy Owl
@@ -34,6 +36,7 @@ These species have enhanced detection capabilities compared to the base BirdNET 
 - **Pyrrhula pyrrhula** - Eurasian Bullfinch
 - **Siren** - Siren (added to improve siren detection and reduce false matches with Eastern Screech-Owl)
 - **Tetrastes bonasia** - Hazel Grouse
+- **Turdus merula** - Eurasian Blackbird
 
 ### New Species
 Species added to extend the base model's capabilities:
@@ -56,12 +59,15 @@ Species added to extend the base model's capabilities:
 ## Changelog
 
 ### 20250909
-- Updated augmented species list to 15 species total
+- Updated augmented species list to 20 species total
 - Added new augmented species:
   - **Certhia familiaris** - Eurasian Treecreeper
   - **Corvus corax** - Common Raven
+  - **Corvus cornix** - Hooded Crow
   - **Cyanistes caeruleus** - Eurasian Blue Tit
+  - **Dryocopus martius** - Black Woodpecker
   - **Parus major** - Great Tit
+  - **Turdus merula** - Eurasian Blackbird
 - Added **Siren** class to improve siren detection and reduce false matches with Eastern Screech-Owl
 - Enhanced detection for existing species:
   - **Dendrocopos major** - Great Spotted Woodpecker
