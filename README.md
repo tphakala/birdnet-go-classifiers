@@ -8,11 +8,11 @@ This repository contains specialized BirdNET classifier models that extend the c
 
 ## Current Model Version
 
-**BirdNET-Go_classifier_28082025**
+**BirdNET-Go_classifier_20250907**
 
 - Base Model: BirdNET v2.4
 - Format: TensorFlow Lite (.tflite)
-- Release Date: August 28, 2025
+- Release Date: September 9, 2025
 
 ## Supported Species
 
@@ -20,15 +20,19 @@ This repository contains specialized BirdNET classifier models that extend the c
 These species have enhanced detection capabilities compared to the base BirdNET model:
 
 - **Certhia familiaris** - Eurasian Treecreeper
+- **Corvus corax** - Common Raven
+- **Cyanistes caeruleus** - Eurasian Blue Tit
 - **Dendrocopos major** - Great Spotted Woodpecker
 - **Dog** - Dog
+- **Engine** - Engine
 - **Garrulus glandarius** - Eurasian Jay
 - **Glaucidium passerinum** - Eurasian Pygmy Owl
-- **Human non-vocal** - Human non-vocal sounds
 - **Human vocal** - Human vocal sounds
 - **Loxia curvirostra** - Common Crossbill
-- **Picus canus** - Grey-headed Woodpecker
+- **Parus major** - Great Tit
+- **Picus Canus** - Grey-headed Woodpecker
 - **Pyrrhula pyrrhula** - Eurasian Bullfinch
+- **Siren** - Siren (added to improve siren detection and reduce false matches with Eastern Screech-Owl)
 - **Tetrastes bonasia** - Hazel Grouse
 
 ### New Species
@@ -44,17 +48,50 @@ Species added to extend the base model's capabilities:
 2. Place the `.tflite` file in your BirdNET-Go models directory (birdnet-go-app/data/models/)
 3. Place the `*_Labels.txt` next to `.tflite` file in models directory
 4. Configure BirdNET-Go to use the custom classifier in config.yaml
-     - Set modelpath to "models/BirdNET-Go_classifier_20250825.tflite"
-     - Set labelpath to "models/BirdNET-Go_classifier_20250825_Labels.txt"
+     - Set modelpath to "models/BirdNET-Go_classifier_20250907.tflite"
+     - Set labelpath to "models/BirdNET-Go_classifier_20250907_Labels.txt"
      - Restart BirdNET-Go
 5. Refer to the [BirdNET-Go documentation](https://github.com/tphakala/birdnet-go) for detailed setup instructions
 
 ## Changelog
 
-### v28082025
+### 20250909
+- Updated augmented species list to 15 species total
+- Added new augmented species:
+  - **Certhia familiaris** - Eurasian Treecreeper
+  - **Corvus corax** - Common Raven
+  - **Cyanistes caeruleus** - Eurasian Blue Tit
+  - **Parus major** - Great Tit
+- Added **Siren** class to improve siren detection and reduce false matches with Eastern Screech-Owl
+- Enhanced detection for existing species:
+  - **Dendrocopos major** - Great Spotted Woodpecker
+  - **Dog** - Dog
+  - **Engine** - Engine
+  - **Garrulus glandarius** - Eurasian Jay
+  - **Glaucidium passerinum** - Eurasian Pygmy Owl
+  - **Human vocal** - Human vocal
+  - **Loxia curvirostra** - Common Crossbill
+  - **Ovis aries** - Sheep
+  - **Picus Canus** - Grey-headed Woodpecker
+  - **Pyrrhula pyrrhula** - Eurasian Bullfinch
+  - **Tetrastes bonasia** - Hazel Grouse
+  - **Vulpes vulpes** - Red Fox
+
+### 20250825
 - Initial release based on BirdNET v2.4
-- Added 11 augmented species with enhanced detection
-- Added 2 new species: Sheep and Red Fox
+- Added augmented species list with 12 species:
+  - **Dendrocopos major** - Great Spotted Woodpecker
+  - **Dog** - Dog
+  - **Engine** - Engine
+  - **Garrulus glandarius** - Eurasian Jay
+  - **Glaucidium passerinum** - Eurasian Pygmy Owl
+  - **Human vocal** - Human vocal
+  - **Loxia curvirostra** - Common Crossbill
+  - **Ovis aries** - Sheep
+  - **Picus Canus** - Grey-headed Woodpecker
+  - **Pyrrhula pyrrhula** - Eurasian Bullfinch
+  - **Tetrastes bonasia** - Hazel Grouse
+  - **Vulpes vulpes** - Red Fox
 - Optimized for BirdNET-Go and BirdNET Analyzer compatibility
 
 ## License
