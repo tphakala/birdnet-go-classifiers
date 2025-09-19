@@ -8,11 +8,11 @@ This repository contains specialized BirdNET classifier models that extend the c
 
 ## Current Model Version
 
-**BirdNET-Go_classifier_20250907**
+**BirdNET-Go_classifier_20250916**
 
 - Base Model: BirdNET v2.4
 - Format: TensorFlow Lite (.tflite)
-- Release Date: September 9, 2025
+- Release Date: September 16, 2025
 
 ## Supported Species
 
@@ -23,17 +23,22 @@ These species have enhanced detection capabilities compared to the base BirdNET 
 - **Corvus corax** - Common Raven
 - **Corvus cornix** - Hooded Crow
 - **Cyanistes caeruleus** - Eurasian Blue Tit
+- **Cygnus cygnus** - Whooper Swan
 - **Dendrocopos major** - Great Spotted Woodpecker
 - **Dog** - Dog
 - **Dryocopus martius** - Black Woodpecker
 - **Engine** - Engine
+- **Erithacus rubecula** - European Robin
 - **Garrulus glandarius** - Eurasian Jay
 - **Glaucidium passerinum** - Eurasian Pygmy Owl
 - **Human vocal** - Human vocal sounds
 - **Loxia curvirostra** - Common Crossbill
 - **Parus major** - Great Tit
-- **Picus Canus** - Grey-headed Woodpecker
+- **Periparus ater** - Coal Tit
+- **Picus canus** - Grey-headed Woodpecker
+- **Prunella modularis** - Dunnock
 - **Pyrrhula pyrrhula** - Eurasian Bullfinch
+- **Regulus regulus** - Goldcrest
 - **Siren** - Siren (added to improve siren detection and reduce false matches with Eastern Screech-Owl)
 - **Tetrastes bonasia** - Hazel Grouse
 - **Turdus merula** - Eurasian Blackbird
@@ -41,6 +46,10 @@ These species have enhanced detection capabilities compared to the base BirdNET 
 ### New Species
 Species added to extend the base model's capabilities:
 
+- **Alces alces** - Moose
+- **Capreolus capreolus** - Roe deer
+- **Clethrionomys glareolus** - Bank vole
+- **Lynx lynx** - Eurasian lynx
 - **Ovis aries** - Sheep
 - **Vulpes vulpes** - Red Fox
 
@@ -51,12 +60,27 @@ Species added to extend the base model's capabilities:
 2. Place the `.tflite` file in your BirdNET-Go models directory (birdnet-go-app/data/models/)
 3. Place the `*_Labels.txt` next to `.tflite` file in models directory
 4. Configure BirdNET-Go to use the custom classifier in config.yaml
-     - Set modelpath to "models/BirdNET-Go_classifier_20250907.tflite"
-     - Set labelpath to "models/BirdNET-Go_classifier_20250907_Labels.txt"
+     - Set modelpath to "models/BirdNET-Go_classifier_20250916.tflite"
+     - Set labelpath to "models/BirdNET-Go_classifier_20250916_Labels.txt"
      - Restart BirdNET-Go
 5. Refer to the [BirdNET-Go documentation](https://github.com/tphakala/birdnet-go) for detailed setup instructions
 
 ## Changelog
+
+### 20250916
+- Updated augmented species list to 29 species total (up from 20)
+- Added 9 new augmented species:
+  - **Alces alces** - Moose
+  - **Capreolus capreolus** - Roe deer
+  - **Clethrionomys glareolus** - Bank vole
+  - **Cygnus cygnus** - Whooper Swan
+  - **Erithacus rubecula** - European Robin
+  - **Lynx lynx** - Eurasian lynx
+  - **Periparus ater** - Coal Tit
+  - **Prunella modularis** - Dunnock
+  - **Regulus regulus** - Goldcrest
+- Enhanced detection for all existing species from previous version
+- Improved model accuracy and performance
 
 ### 20250909
 - Updated augmented species list to 20 species total
